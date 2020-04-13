@@ -1,8 +1,9 @@
 '''
- A Python program to sum two given integers.
- If the sum is between 15 to 20 it will return 20.
-'''
+ A program that adds up numbers
+ '''
+ 
 def number_sum():
+    '''Sums up two integers and returns the output. Prints the output of 20 only if the sum is between 15 and 20.'''
     try:
         num1 = int(input("\nEnter a number: "))
         num2 = int(input("\nEnter another number: "))
@@ -16,6 +17,6 @@ def number_sum():
     except ValueError:
         print("Invalid input! Please enter a number")
         number_sum()
-
+    return
 
 number_sum()
