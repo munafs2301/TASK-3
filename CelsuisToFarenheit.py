@@ -2,6 +2,7 @@
 A program that converts temperature from Celsuis to Farenheit and vice versa
 '''
 
+print("\n A TEMPERATURE CONVERTER\n")
 
 def to_faren():
     ''' Converts to temperature to Farenheit'''
@@ -20,7 +21,6 @@ def to_cel():
 
 def choose_option():
     '''Allows user to make choice on type of conversion'''
-    print("\n A TEMPERATURE CONVERTER")
     choice = input("What would you like to do? \n 1. Celsuis to Farenheit conversion \n 2. Farenheit to Celsuis conversion\n\n")
 
     if choice == "1":
@@ -30,7 +30,7 @@ def choose_option():
         to_cel()
 
     else:
-        print("Invalid input! Press either 1 or 2.")
+        print("\nInvalid input! Press either 1 or 2.\n")
         choose_option()
     return
 
